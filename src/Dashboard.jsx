@@ -265,11 +265,10 @@ export default function OneTraDashboard() {
       <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
         <span className="ot-logo">One<em>Tra</em> Health™</span>
         <span style={{ width: 1, height: 18, background: "var(--line)", display: "inline-block" }} />
-        <span className="ot-nav-tag">Physician Cockpit</span>
+        <span className="ot-nav-tag">Clinical Dashboard</span>
       </div>
       <div className="ot-nav-r">
         <div className="nav-pill"><span className="nav-dot" />Clinical Safety · Active</div>
-        <div className="nav-pill" style={{ borderColor: "rgba(74,184,240,0.2)", color: "var(--sky)", background: "rgba(74,184,240,0.06)" }}>VEDA-RT Alpha</div>
       </div>
     </nav>
   );
@@ -368,12 +367,12 @@ export default function OneTraDashboard() {
           {/* DOCTOR 1 / DOCTOR 2 — core AI output */}
           <div className="two-col">
             <div className="ai-output-card">
-              <span className="doc-engine-tag doc1-tag">⬡ Doctor 1 · NCCN/FDA Doctrine Engine</span>
+              <span className="doc-engine-tag doc1-tag">⬡ STANDARD OF CARE</span>
               <div className="doc-title">Guideline-Grounded Recommendation</div>
               <div className="doc-body">{data.doctor1}</div>
             </div>
             <div className="ai-output-card">
-              <span className="doc-engine-tag doc2-tag">⬡ Doctor 2 · Investigational Analyst</span>
+              <span className="doc-engine-tag doc2-tag">⬡ RESEARCH &amp; TRIALS</span>
               <div className="doc-title">Research Guidance &amp; Caveats</div>
               <div className="doc-body">{data.doctor2}</div>
             </div>

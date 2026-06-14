@@ -1,16 +1,17 @@
-import { StrictMode } from 'react' 
-import { createRoot } from 'react-dom/client' 
-import { BrowserRouter, Routes, Route } from 'react-router-dom' 
-import './index.css' 
-import App from './App.jsx' 
-import Dashboard from './Dashboard.jsx' 
-createRoot(document.getElementById('root')).render( 
-  <StrictMode> 
-    <BrowserRouter> 
-      <Routes> 
-        <Route path="/" element={<App />} /> 
-        <Route path="/dashboard" element={<Dashboard />} /> 
-      </Routes> 
-    </BrowserRouter> 
-  </StrictMode> 
-) 
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
+import Login from "./Login.jsx";
+import Dashboard from "./Dashboard.jsx";
+
+const path = window.location.pathname;
+
+let Component = App;
+if (path === "/login") Component = Login;
+if (path === "/dashboard" || path === "/onco_view") Component = Dashboard;
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <Component />
+  </StrictMode>
+);

@@ -91,19 +91,6 @@ const styles = `
   .tag-mint { background: rgba(46,212,160,0.1); color: var(--mint); border: 1px solid rgba(46,212,160,0.2); }
   .tag-muted { background: rgba(106,159,192,0.1); color: var(--muted); border: 1px solid rgba(106,159,192,0.2); }
 
-  /* BRIEFING */
-  .briefing-card {
-    background: linear-gradient(135deg, rgba(26,53,102,0.7) 0%, rgba(13,33,68,0.9) 100%);
-    border: 1px solid var(--card-border);
-    border-radius: 20px;
-    padding: 36px 40px;
-  }
-  .sec-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 2.5px; color: var(--sky); text-transform: uppercase; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
-  .sec-label::after { content: ''; flex: 1; height: 1px; background: var(--line); }
-  .briefing-title { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 6px; }
-  .briefing-sub { font-size: 13px; font-style: italic; color: var(--muted); margin-bottom: 20px; }
-  .briefing-text { font-size: 14.5px; line-height: 1.85; color: var(--txt); font-weight: 300; }
-
   /* TWO COL */
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 
@@ -161,92 +148,191 @@ const styles = `
   .hope-text { font-size: 14px; line-height: 1.75; color: var(--txt); font-style: italic; font-weight: 300; }
   .hope-text strong { color: var(--mint); font-style: normal; font-weight: 600; }
 
+  /* SEC LABEL */
+  .sec-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 2.5px; color: var(--sky); text-transform: uppercase; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .sec-label::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+
+  /* AI OUTPUT (doctor1 / doctor2) */
+  .ai-output-card {
+    background: linear-gradient(135deg, rgba(26,53,102,0.7) 0%, rgba(13,33,68,0.9) 100%);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+  }
+  .doc-engine-tag { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; padding: 3px 10px; border-radius: 4px; margin-bottom: 14px; display: inline-flex; align-items: center; gap: 6px; width: fit-content; }
+  .doc1-tag { background: rgba(74,184,240,0.1); color: var(--sky); border: 1px solid rgba(74,184,240,0.2); }
+  .doc2-tag { background: rgba(46,212,160,0.1); color: var(--mint); border: 1px solid rgba(46,212,160,0.2); }
+  .doc-title { font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 14px; }
+  .doc-body { font-size: 13.5px; line-height: 1.85; color: var(--txt); font-weight: 300; white-space: pre-wrap; }
+
+  /* LOADING / ERROR */
+  .state-card {
+    background: linear-gradient(135deg, rgba(26,53,102,0.7) 0%, rgba(13,33,68,0.9) 100%);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 80px 40px;
+    text-align: center;
+  }
+  .loading-dots { display: flex; gap: 10px; justify-content: center; margin-bottom: 24px; }
+  .loading-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--sky); animation: pulse 1.4s infinite; }
+  .loading-dot:nth-child(2) { animation-delay: 0.2s; }
+  .loading-dot:nth-child(3) { animation-delay: 0.4s; }
+  .state-title { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+  .state-sub { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 1px; }
+  .state-err-msg { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--coral); background: rgba(240,98,114,0.08); border: 1px solid rgba(240,98,114,0.2); border-radius: 8px; padding: 10px 16px; margin-top: 16px; }
+
   /* FOOTER */
   .ot-footer { text-align: center; padding: 24px 32px; border-top: 1px solid var(--line); margin-top: 16px; }
   .ot-footer-txt { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.5px; }
 `;
 
-const mockData = {
-  patient_id: "SYN-ONC-000",
-  status: "Ready for Physician Review",
-  final_physician_summary:
-    "Osimertinib was identified as a Preferred NCCN Category 1 pathway with a final composite score of 12 — representing the strongest possible evidence alignment for this patient's EGFR L858R profile. NCT-MOCK-002 achieved Strongly Recommended status (match score 9.0), with clean TP53 alignment and no exclusion conflicts — an open door worth exploring. NCT-MOCK-001 requires review: EGFR and stage match are confirmed, but prior Pembrolizumab exposure flags a potential conflict that warrants physician judgment before proceeding.",
-  patient_context: {
-    cancer_type: "Non-Small Cell Lung Cancer",
-    stage: "IV",
-    prior_therapies: ["Platinum doublet chemotherapy", "Pembrolizumab"],
-    biomarkers: ["EGFR L858R", "TP53 R273H"],
-  },
-  treatments: [
-    {
-      treatment: "Osimertinib",
-      category: "Preferred",
-      evidence_level: "Category 1",
-      final_score: 12,
-      max_score: 15,
-      matched_biomarkers: ["EGFR"],
-      rationale: "Strong NCCN Category 1 recommendation with direct EGFR L858R match. FLAURA trial demonstrates superior PFS over earlier-generation TKIs.",
+/* The SYN-ONC-000 VEDA stream — hardcoded for this release; oncologist input form is a later step */
+const VEDA_STREAM =
+  "VEDA1.0|SID:PT-20260613-000|DV:1.0\n@BASE[SID:PT-20260613-000]|Sigma[CT:NSCLC].[ST:4].[GR:X].[MS:NSCLC]|Omega[CH:7].[GN:14].[VT:04].[ZY:H]~[CF:95]|Omega[CH:9].[GN:25].[VT:07].[ZY:H]~[CF:95]|Lambda[GB:NCCN].[PI:NSCLC-2026].[VR:1.0].[LT:1L]|[AG:A3].[GD:M].[PS:1].[PT:CH].[PT:RT]";
+
+const STAGE_MAP = { "1": "I", "2": "II", "3": "III", "4": "IV" };
+const CONF_SCORE = { HIGH: 90, MEDIUM: 60, LOW: 30 };
+
+function toTitleCase(soc) {
+  return soc.split("+").map(w => w.charAt(0) + w.slice(1).toLowerCase()).join(" + ");
+}
+
+function transformResponse(api) {
+  const glyphs = api.parsed?.glyphs || {};
+  const sigma = glyphs.sigma || {};
+  const omega = glyphs.omega || [];
+  const demo = glyphs.demographics || {};
+  const prior = glyphs.prior_treatments || [];
+
+  return {
+    session_id: api.session_id,
+    status: api.status,
+    patient_context: {
+      cancer_type: sigma.cancer_type || "Unknown",
+      stage: STAGE_MAP[sigma.stage] || sigma.stage || "Unknown",
+      biomarkers: omega.map(b => `${b.gene_name} ${b.variant_name}`),
+      prior_therapies: prior.map(p => p.name),
+      performance_status: demo.performance_status || "",
     },
-  ],
-  trials: [
-    {
-      nct_id: "NCT-MOCK-002",
-      title: "Phase 2 Study of Novel TP53 Stabilizers in Solid Tumors",
-      status: "Strongly Recommended",
-      match_score: 9.0,
-      rationale: "Gene Match: TP53 · Stage Match: IV · No exclusion conflicts identified",
-    },
-    {
-      nct_id: "NCT-MOCK-001",
-      title: "Targeted Therapy in Advanced EGFR-Mutated NSCLC",
-      status: "Review Required",
-      match_score: 2.0,
-      rationale: "Gene Match: EGFR · Variant: EGFR L858R · Stage: IV · ⚠️ Prior Pembrolizumab exposure — physician review advised",
-    },
-  ],
-};
+    treatments: (api.matched_rules || []).map(rule => ({
+      treatment: toTitleCase(rule.soc),
+      category: rule.evidence === "NCCN_CAT1" ? "Preferred" : "Alternative",
+      evidence_level: rule.evidence === "NCCN_CAT1" ? "Category 1" : rule.evidence,
+      final_score: CONF_SCORE[rule.confidence] ?? 50,
+      max_score: 100,
+      matched_biomarkers: [rule.biomarker.split("_")[0]],
+      rationale: rule.reason,
+      prior_exposure: rule.prior_exposure,
+    })),
+    trials: [],
+    doctor1: api.doctor1,
+    doctor2: api.doctor2,
+  };
+}
 
 export default function OneTraDashboard() {
-  const [mounted, setMounted] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [data, setData] = useState(null);
   const [scoreFilled, setScoreFilled] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
-    setTimeout(() => setScoreFilled(true), 400);
+    const base = import.meta.env.VITE_API_URL || "http://localhost:8000";
+    fetch(`${base}/analyze`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ stream: VEDA_STREAM }),
+    })
+      .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+      .then(json => {
+        if (json.status === "REJECTED") throw new Error(json.error || "VEDA stream rejected");
+        setData(transformResponse(json));
+        setLoading(false);
+        setTimeout(() => setScoreFilled(true), 400);
+      })
+      .catch(err => {
+        setError(err.message);
+        setLoading(false);
+      });
   }, []);
 
   const pct = (score, max) => Math.round((score / max) * 100);
 
+  const nav = (
+    <nav className="ot-nav">
+      <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+        <span className="ot-logo">One<em>Tra</em> Health™</span>
+        <span style={{ width: 1, height: 18, background: "var(--line)", display: "inline-block" }} />
+        <span className="ot-nav-tag">Physician Cockpit</span>
+      </div>
+      <div className="ot-nav-r">
+        <div className="nav-pill"><span className="nav-dot" />Clinical Safety · Active</div>
+        <div className="nav-pill" style={{ borderColor: "rgba(74,184,240,0.2)", color: "var(--sky)", background: "rgba(74,184,240,0.06)" }}>VEDA-RT Alpha</div>
+      </div>
+    </nav>
+  );
+
+  if (loading) {
+    return (
+      <>
+        <style>{styles}</style>
+        <div className="ot-wrap">
+          {nav}
+          <main className="ot-main">
+            <div className="state-card">
+              <div className="loading-dots">
+                <div className="loading-dot" />
+                <div className="loading-dot" />
+                <div className="loading-dot" />
+              </div>
+              <div className="state-title">Analyzing VEDA stream…</div>
+              <div className="state-sub">Running Doctor 1 · Doctor 2 · Rule matching</div>
+            </div>
+          </main>
+        </div>
+      </>
+    );
+  }
+
+  if (error) {
+    return (
+      <>
+        <style>{styles}</style>
+        <div className="ot-wrap">
+          {nav}
+          <main className="ot-main">
+            <div className="state-card">
+              <div className="state-title">Analysis unavailable</div>
+              <div className="state-sub">Check that the VEDA-RT backend is running on {import.meta.env.VITE_API_URL || "http://localhost:8000"}</div>
+              <div className="state-err-msg">{error}</div>
+            </div>
+          </main>
+        </div>
+      </>
+    );
+  }
+
   return (
     <>
       <style>{styles}</style>
-      <div className="ot-wrap" style={{ opacity: mounted ? 1 : 0, transition: "opacity 0.5s" }}>
+      <div className="ot-wrap">
 
-        {/* NAV */}
-        <nav className="ot-nav">
-          <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-            <span className="ot-logo">One<em>Tra</em> Health™</span>
-            <span style={{ width: 1, height: 18, background: "var(--line)", display: "inline-block" }} />
-            <span className="ot-nav-tag">Physician Cockpit</span>
-          </div>
-          <div className="ot-nav-r">
-            <div className="nav-pill"><span className="nav-dot" />Clinical Safety · Active</div>
-            <div className="nav-pill" style={{ borderColor: "rgba(74,184,240,0.2)", color: "var(--sky)", background: "rgba(74,184,240,0.06)" }}>Azure OpenAI</div>
-          </div>
-        </nav>
+        {nav}
 
         <main className="ot-main">
 
           {/* PATIENT CARD */}
           <div className="patient-card">
-            <div className="pc-eyebrow">Stage IV · Non-Small Cell Lung Cancer · {mockData.patient_id}</div>
-            <div className="pc-title">{mockData.patient_context.cancer_type}</div>
+            <div className="pc-eyebrow">Stage {data.patient_context.stage} · {data.patient_context.cancer_type} · {data.session_id}</div>
+            <div className="pc-title">{data.patient_context.cancer_type}</div>
             <div className="pc-hope">Every data point analyzed. Every pathway explored. Evidence in hand — so your team can focus on what matters most.</div>
             <div className="pc-grid">
               <div className="pc-cell">
                 <div className="pc-cell-label">Key Biomarkers</div>
                 <div className="pc-cell-val">
-                  {mockData.patient_context.biomarkers.map((b) => (
+                  {data.patient_context.biomarkers.map((b) => (
                     <span key={b} className="tag tag-sky">{b}</span>
                   ))}
                 </div>
@@ -254,7 +340,7 @@ export default function OneTraDashboard() {
               <div className="pc-cell">
                 <div className="pc-cell-label">Prior Therapies</div>
                 <div className="pc-cell-val">
-                  {mockData.patient_context.prior_therapies.map((t) => (
+                  {data.patient_context.prior_therapies.map((t) => (
                     <span key={t} className="tag tag-amber">{t}</span>
                   ))}
                 </div>
@@ -262,7 +348,9 @@ export default function OneTraDashboard() {
               <div className="pc-cell">
                 <div className="pc-cell-label">Performance Status</div>
                 <div className="pc-cell-val">
-                  <span className="tag tag-mint">ECOG 1</span>
+                  {data.patient_context.performance_status
+                    ? <span className="tag tag-mint">{data.patient_context.performance_status}</span>
+                    : null}
                   <span className="tag tag-muted">Ready for Treatment</span>
                 </div>
               </div>
@@ -273,34 +361,43 @@ export default function OneTraDashboard() {
           <div className="hope-banner">
             <div className="hope-icon">🔬</div>
             <div className="hope-text">
-              <strong>Science has opened doors here.</strong> This patient's molecular profile matches targetable pathways and active clinical trials. The analysis below gives your team a clear, evidence-ranked starting point — the next step belongs to you.
+              <strong>Science has opened doors here.</strong> This patient's molecular profile matches targetable pathways. The analysis below gives your team a clear, evidence-ranked starting point — the next step belongs to you.
             </div>
           </div>
 
-          {/* BRIEFING */}
-          <div className="briefing-card">
-            <div className="sec-label">AI Clinical Briefing</div>
-            <div className="briefing-title">Physician Summary</div>
-            <div className="briefing-sub">NCCN-aligned · Biomarker-validated · Evidence-ranked</div>
-            <div className="briefing-text">{mockData.final_physician_summary}</div>
+          {/* DOCTOR 1 / DOCTOR 2 — core AI output */}
+          <div className="two-col">
+            <div className="ai-output-card">
+              <span className="doc-engine-tag doc1-tag">⬡ Doctor 1 · NCCN/FDA Doctrine Engine</span>
+              <div className="doc-title">Guideline-Grounded Recommendation</div>
+              <div className="doc-body">{data.doctor1}</div>
+            </div>
+            <div className="ai-output-card">
+              <span className="doc-engine-tag doc2-tag">⬡ Doctor 2 · Investigational Analyst</span>
+              <div className="doc-title">Research Guidance &amp; Caveats</div>
+              <div className="doc-body">{data.doctor2}</div>
+            </div>
           </div>
 
           {/* TWO COL: TREATMENTS + TRIALS */}
-          <div className="two-col">
+          <div className={data.trials.length > 0 ? "two-col" : ""}>
 
             {/* TREATMENTS */}
             <div>
               <div className="sec-label" style={{ marginBottom: 16 }}>Treatment Pathways</div>
               <div className="treat-section">
-                {mockData.treatments.map((t) => (
+                {data.treatments.map((t) => (
                   <div className="treat-card" key={t.treatment}>
                     <div style={{ display: "flex", gap: 6, marginBottom: 10 }}>
                       <span className="treat-badge badge-pref">⭐ {t.category}</span>
                       <span className="treat-badge badge-cat1">{t.evidence_level}</span>
+                      {t.prior_exposure && (
+                        <span className="treat-badge" style={{ background: "rgba(245,166,35,0.1)", color: "var(--amber)", border: "1px solid rgba(245,166,35,0.25)" }}>Prior Exposure</span>
+                      )}
                     </div>
                     <div className="treat-name">{t.treatment}</div>
                     <div className="treat-rationale">{t.rationale}</div>
-                    <div className="treat-score">Score {t.final_score} / {t.max_score}</div>
+                    <div className="treat-score">Confidence {t.final_score}%</div>
                     <div className="score-bar">
                       <div className="score-fill" style={{ width: scoreFilled ? `${pct(t.final_score, t.max_score)}%` : "0%" }} />
                     </div>
@@ -309,51 +406,48 @@ export default function OneTraDashboard() {
                     </div>
                   </div>
                 ))}
-                <div className="treat-card" style={{ borderColor: "rgba(74,184,240,0.08)", opacity: 0.6, cursor: "default" }}>
-                  <div style={{ fontFamily: "'DM Mono', monospace", fontSize: 11, color: "var(--muted)", textAlign: "center", padding: "8px 0" }}>
-                    + 2 more pathways · Connect backend to unlock
-                  </div>
-                </div>
               </div>
             </div>
 
-            {/* TRIALS */}
-            <div>
-              <div className="sec-label" style={{ marginBottom: 16 }}>Clinical Trials Matched</div>
-              <div className="treat-section">
-                {mockData.trials.map((tr) => (
-                  <div className="trial-card" key={tr.nct_id}>
-                    <span className={`trial-status ${tr.status === "Strongly Recommended" ? "status-strong" : "status-review"}`}>
-                      {tr.status === "Strongly Recommended" ? "✓ " : "⚠ "}{tr.status}
-                    </span>
-                    <div className="trial-id">{tr.nct_id}</div>
-                    <div className="trial-title">{tr.title}</div>
-                    <div className="trial-rationale">{tr.rationale}</div>
-                    <div className="trial-score-row">
-                      <span className="trial-score-label">Match score</span>
-                      <span className="trial-score-val">{tr.match_score.toFixed(1)} / 10</span>
+            {/* TRIALS — only rendered when the API returns trial data */}
+            {data.trials.length > 0 && (
+              <div>
+                <div className="sec-label" style={{ marginBottom: 16 }}>Clinical Trials Matched</div>
+                <div className="treat-section">
+                  {data.trials.map((tr) => (
+                    <div className="trial-card" key={tr.nct_id}>
+                      <span className={`trial-status ${tr.status === "Strongly Recommended" ? "status-strong" : "status-review"}`}>
+                        {tr.status === "Strongly Recommended" ? "✓ " : "⚠ "}{tr.status}
+                      </span>
+                      <div className="trial-id">{tr.nct_id}</div>
+                      <div className="trial-title">{tr.title}</div>
+                      <div className="trial-rationale">{tr.rationale}</div>
+                      <div className="trial-score-row">
+                        <span className="trial-score-label">Match score</span>
+                        <span className="trial-score-val">{tr.match_score.toFixed(1)} / 10</span>
+                      </div>
+                      <div className="score-bar" style={{ marginTop: 8 }}>
+                        <div className="score-fill"
+                          style={{
+                            width: scoreFilled ? `${(tr.match_score / 10) * 100}%` : "0%",
+                            background: tr.status === "Strongly Recommended"
+                              ? "linear-gradient(90deg, var(--mint), var(--sky))"
+                              : "linear-gradient(90deg, var(--amber), var(--coral))"
+                          }}
+                        />
+                      </div>
                     </div>
-                    <div className="score-bar" style={{ marginTop: 8 }}>
-                      <div className="score-fill"
-                        style={{
-                          width: scoreFilled ? `${(tr.match_score / 10) * 100}%` : "0%",
-                          background: tr.status === "Strongly Recommended"
-                            ? "linear-gradient(90deg, var(--mint), var(--sky))"
-                            : "linear-gradient(90deg, var(--amber), var(--coral))"
-                        }}
-                      />
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
           </div>
 
-          {/* FOOTER NOTE */}
+          {/* FOOTER */}
           <div className="ot-footer">
             <div className="ot-footer-txt">
-              OneTra Health · Oncology Decision Intelligence · NCCN-aligned · Azure-native · Not a substitute for physician clinical judgment
+              OneTra Health · Oncology Decision Intelligence · NCCN-aligned · VEDA-RT · Not a substitute for physician clinical judgment
             </div>
           </div>
 

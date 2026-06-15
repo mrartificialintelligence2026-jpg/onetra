@@ -111,6 +111,9 @@ const styles = `
   .treat-badge { display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; border-radius: 4px; font-family: 'DM Mono', monospace; font-size: 9px; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px; }
   .badge-pref { background: rgba(74,184,240,0.12); color: var(--sky); border: 1px solid rgba(74,184,240,0.25); }
   .badge-cat1 { background: rgba(46,212,160,0.1); color: var(--mint); border: 1px solid rgba(46,212,160,0.2); }
+  .badge-contraindicated { background: rgba(239,68,68,0.12); color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
+  .treat-card.card-contraindicated { opacity: 0.75; border-left: 3px solid #ef4444; }
+  .treat-card.card-contraindicated::before { background: #ef4444; }
   .treat-name { font-family: 'Syne', sans-serif; font-size: 17px; font-weight: 700; color: var(--white); margin-bottom: 6px; }
   .treat-rationale { font-size: 13px; color: var(--muted); line-height: 1.65; font-style: italic; }
   .treat-score { position: absolute; top: 22px; right: 22px; font-family: 'DM Mono', monospace; font-size: 11px; color: var(--sky); }
@@ -218,13 +221,15 @@ function transformResponse(api) {
     },
     treatments: (api.matched_rules || []).map(rule => ({
       treatment: toTitleCase(rule.soc),
-      category: rule.evidence === "NCCN_CAT1" ? "Preferred" : "Alternative",
-      evidence_level: rule.evidence === "NCCN_CAT1" ? "Category 1" : rule.evidence,
+      category: rule.contraindicated ? "Contraindicated" : (rule.evidence === "NCCN_CAT1" ? "Preferred" : "Alternative"),
+      evidence_level: rule.contraindicated ? null : (rule.evidence === "NCCN_CAT1" ? "Category 1" : rule.evidence),
       final_score: CONF_SCORE[rule.confidence] ?? 50,
       max_score: 100,
       matched_biomarkers: [rule.biomarker.split("_")[0]],
       rationale: rule.reason,
       prior_exposure: rule.prior_exposure,
+      contraindicated: rule.contraindicated,
+      contraindication_reason: rule.contraindication_reason,
     })),
     trials: [],
     doctor1: api.doctor1,
@@ -386,10 +391,16 @@ export default function OneTraDashboard() {
               <div className="sec-label" style={{ marginBottom: 16 }}>Treatment Pathways</div>
               <div className="treat-section">
                 {data.treatments.map((t) => (
-                  <div className="treat-card" key={t.treatment}>
+                  <div className={`treat-card${t.contraindicated ? " card-contraindicated" : ""}`} key={t.treatment}>
                     <div style={{ display: "flex", gap: 6, marginBottom: 10 }}>
-                      <span className="treat-badge badge-pref">⭐ {t.category}</span>
-                      <span className="treat-badge badge-cat1">{t.evidence_level}</span>
+                      {t.contraindicated ? (
+                        <span className="treat-badge badge-contraindicated">⚠ Contraindicated — {t.contraindication_reason}</span>
+                      ) : (
+                        <>
+                          <span className="treat-badge badge-pref">⭐ {t.category}</span>
+                          <span className="treat-badge badge-cat1">{t.evidence_level}</span>
+                        </>
+                      )}
                       {t.prior_exposure && (
                         <span className="treat-badge" style={{ background: "rgba(245,166,35,0.1)", color: "var(--amber)", border: "1px solid rgba(245,166,35,0.25)" }}>Prior Exposure</span>
                       )}

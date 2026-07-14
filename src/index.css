@@ -1,1 +1,16 @@
-html{background:#f3f5f0;color-scheme:light}body{min-width:320px}#root{min-height:100vh}
+html{background:#f3f5f0;color-scheme:light;max-width:100%;overflow-x:hidden}
+body{min-width:320px;max-width:100%;overflow-x:hidden}
+#root{min-height:100vh;max-width:100%;overflow-x:hidden}
+*,*::before,*::after{min-width:0}
+button,input,select{max-width:100%}
+.warning{padding:14px 20px!important;position:relative;z-index:3}
+.pipeline{margin:20px auto 28px!important}
+.workspace,.panel,.results,.citation,.issue{min-width:0;max-width:100%}
+.citation,.citation b,.citation p,.citation small,.request,.issue code{overflow-wrap:anywhere;word-break:break-word}
+.pathway-warning{background:#fff1e5;color:#803b19;border-left:4px solid #c76b33;padding:12px;border-radius:5px;font-size:12px;line-height:1.5}
+.safety-explain{background:#f3f6f4;color:#52615b;padding:10px;border-radius:5px;font-size:11px;line-height:1.5}
+.issues{display:flex;flex-direction:column;gap:9px}
+.issue{display:grid;grid-template-columns:auto auto;gap:5px 10px;background:#fff7eb;border-left:3px solid #d8913b;padding:10px;border-radius:4px;font-size:11px}
+.issue span{font-weight:700;color:#8a4b18}.issue code{grid-column:1/-1;background:transparent;padding:0;color:#6b5140}.issue p,.issue small{grid-column:1/-1;margin:0;line-height:1.5;color:#625e58}
+.evidence-class{display:inline-block;background:#e7f0eb;color:#245748;font-size:9px;font-weight:700;padding:3px 5px;border-radius:3px;margin-bottom:6px}
+@media(max-width:800px){.warning{display:block}.pipeline{margin:18px 16px!important}.workspace{width:100%;padding-inline:16px}.upload{padding:16px}.upload input{font-size:12px}.silence{gap:8px}.silence strong{overflow-wrap:anywhere}}

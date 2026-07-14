@@ -23,7 +23,7 @@ export default function App() {
       <form onSubmit={submit} className="panel form-panel"><div className="panel-head"><div><p className="eyebrow">Synthetic case intake</p><h2>Review the case inputs</h2></div><span className="scope">Adult oncology demo</span></div>
         <div className="grid">
           <Field label="Cancer type" hint={cancers.find(x=>x.id===form.cancer_type)?.coverage}><select value={form.cancer_type} onChange={set("cancer_type")}>{cancers.map(x=><option key={x.id}>{x.id}</option>)}</select></Field>
-          <Field label="Stage"><select value={form.stage} onChange={set("stage")}>{["I","II","III","IV"].map(x=><option key={x}>{x}</option>)}</select></Field>
+          <Field label="Stage"><select value={form.stage} onChange={set("stage")}><option value="">Not provided</option>{["I","II","III","IV"].map(x=><option key={x}>{x}</option>)}</select></Field>
           <Field label="Line of therapy"><select value={form.line_of_therapy} onChange={set("line_of_therapy")}><option>1L</option><option>2L</option><option>3L+</option></select></Field>
           <Field label="ECOG"><select value={form.ecog} onChange={set("ecog")}>{["0","1","2","3","4"].map(x=><option key={x}>{x}</option>)}</select></Field>
           <Field label="Histology"><input value={form.histology} onChange={set("histology")}/></Field>
@@ -39,7 +39,7 @@ export default function App() {
   </main>;
 }
 
-function Result({data}){return <div className="results"><div className="result-title"><div><p className="eyebrow">Unified analysis result</p><h2>{data.case_summary.cancer_type} · Stage {data.case_summary.stage}</h2></div><span className="verified">Safety checks passed</span></div><p className="safety-explain">Safety checks confirm that required software gates completed. This does not establish clinical correctness.</p>
+function Result({data}){return <div className="results"><div className="result-title"><div><p className="eyebrow">Unified analysis result</p><h2>{data.case_summary.cancer_type} · {data.case_summary.stage ? `Stage ${data.case_summary.stage}` : "Stage not provided"}</h2></div><span className="verified">Safety checks passed</span></div><p className="safety-explain">Safety checks confirm that required software gates completed. This does not establish clinical correctness.</p>
   <article><h3>Extracted facts</h3>{data.extracted_facts.length?<div className="chips">{data.extracted_facts.map(f=><span key={f.id}>{f.type}: {f.value}</span>)}</div>:<p className="muted">Structured intake only; no report was uploaded.</p>}</article>
   <article><h3>Missing or uncertain information</h3>{data.information_issues?.length?<div className="issues">{data.information_issues.map((x,i)=><div className="issue" key={`${x.field}-${i}`}><b>{x.field}</b><span>{x.status}</span><code>{x.reason_code}</code><p>{x.explanation}</p><small>{x.caused_abstention?"Caused controlled abstention":"Did not independently cause abstention"}</small></div>)}</div>:<p className="muted">No missing, uncertain, conflicting or unsupported information was identified.</p>}</article>
   <article><h3>Deterministic recommendation</h3>{data.doctor1.recommendations.length?data.doctor1.recommendations.map((r,i)=><div className="recommendation" key={i}><b>{r.treatment}</b><span>{r.evidence_tier}</span><p>{r.rationale}</p></div>):<p className="abstain">Controlled abstention — no grounded rule matched all supplied facts.</p>}</article>

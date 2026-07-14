@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import "./App.css";
 
 const API = import.meta.env.VITE_UNIFIED_API || "";
-const initial = { cancer_type: "NSCLC", stage: "IV", biomarkers: "EGFR_EX19DEL", ecog: "0", line_of_therapy: "1L", histology: "adenocarcinoma" };
+const initial = { cancer_type: "NSCLC", stage: "IV", biomarkers: "EGFR_EX19DEL", ecog: "0", line_of_therapy: "1L", histology: "Nonsquamous" };
 const Field = ({label, children, hint}) => <label className="field"><span>{label}</span>{children}{hint && <small>{hint}</small>}</label>;
 
 export default function App() {

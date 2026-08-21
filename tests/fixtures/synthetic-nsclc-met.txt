@@ -1,0 +1,12 @@
+SYNTHETIC ONCOLOGY CONSULT
+De-identified demo case. No patient name. No medical record number. No address.
+
+Diagnosis: Non-small cell lung cancer, adenocarcinoma.
+Stage: IV.
+ECOG performance status: 1.
+Biomarker: MET exon 14 skipping detected by NGS.
+Line of therapy: first line.
+Prior systemic therapy: none.
+Age: 65 years.
+
+This is a synthetic fixture for software testing only. Not a real patient record.

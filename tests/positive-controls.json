@@ -1,0 +1,413 @@
+[
+  {
+    "id": "HCC-001",
+    "cancer": "Hepatocellular Carcinoma",
+    "stage": "METASTATIC",
+    "line": "1L",
+    "biomarkers": [],
+    "histology": "HCC",
+    "treatment": "Atezolizumab 1200 mg IV followed by bevacizumab 15 mg/kg IV on the same day every 3 weeks",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "BLA-001",
+    "cancer": "Urothelial Carcinoma",
+    "stage": "Locally Advanced",
+    "line": "1L",
+    "biomarkers": [],
+    "histology": "Urothelial",
+    "treatment": "Enfortumab vedotin-ejfv 1.25 mg/kg IV on Days 1 and 8 plus pembrolizumab 200 mg IV on Day 1, every 21 days, until disease progression or unacceptable toxicity",
+    "evidence": ""
+  },
+  {
+    "id": "ESO-001A",
+    "cancer": "Gastric / GEJ Cancer",
+    "stage": "LOCALLY_ADVANCED_UNRESECTABLE",
+    "line": "1L",
+    "biomarkers": [
+      "HER2_POSITIVE_BY_FDA_AUTHORIZED_TEST",
+      "PD_L1_CPS_GE_1_BY_FDA_AUTHORIZED_TEST"
+    ],
+    "histology": "Adenocarcinoma",
+    "treatment": "Pembrolizumab + Trastuzumab + Capecitabine + Oxaliplatin",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "ESO-003B",
+    "cancer": "Esophageal or GEJ carcinoma with GEJ epicenter 1-5 cm above GEJ",
+    "stage": "LOCALLY_ADVANCED_UNRESECTABLE_NOT_AMENABLE_TO_SURGICAL_RESECTION_OR_DEFINITIVE_CHEMORADIATION",
+    "line": "1L",
+    "biomarkers": [
+      "PD-L1_CPS_1_FDA_AUTHORIZED_TEST"
+    ],
+    "histology": "Carcinoma",
+    "treatment": "Pembrolizumab + Platinum + Fluoropyrimidine",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "ESO-002B-B",
+    "cancer": "Gastroesophageal junction adenocarcinoma",
+    "stage": "ADVANCED",
+    "line": "1L",
+    "biomarkers": [
+      "PD-L1_CPS_1"
+    ],
+    "histology": "Adenocarcinoma",
+    "treatment": "Nivolumab + CAPOX",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "STS-004",
+    "cancer": "Soft Tissue Sarcoma",
+    "stage": "UNRESECTABLE",
+    "line": "Any line",
+    "biomarkers": [],
+    "histology": "Alveolar Soft Part Sarcoma",
+    "treatment": "Atezolizumab",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "BTC-003B",
+    "cancer": "Biliary Tract Cancer",
+    "stage": "UNRESECTABLE_LOCALLY_ADVANCED",
+    "line": "2L",
+    "biomarkers": [
+      "FGFR2_FUSION_OR_REARRANGEMENT"
+    ],
+    "histology": "Intrahepatic Cholangiocarcinoma",
+    "treatment": "Futibatinib 20 mg orally once daily until disease progression or unacceptable toxicity",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "MM-003B",
+    "cancer": "Multiple Myeloma",
+    "stage": "Relapsed/Refractory",
+    "line": "1L-3L",
+    "biomarkers": [],
+    "histology": "Plasma Cell",
+    "treatment": "Carfilzomib + Dexamethasone",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "AML-001",
+    "cancer": "Acute Myeloid Leukemia",
+    "stage": "DE_NOVO",
+    "line": "1L",
+    "biomarkers": [
+      "CD33_POSITIVE",
+      "CBF_TRANSLOCATION"
+    ],
+    "histology": "AML",
+    "treatment": "Induction: 7-day cytarabine plus 3-day daunorubicin (7+3) with gemtuzumab ozogamicin 3 mg/m2 IV on Days 1, 4, and 7",
+    "evidence": ""
+  },
+  {
+    "id": "AML-004-A",
+    "cancer": "Acute Myeloid Leukemia",
+    "stage": "Newly Diagnosed",
+    "line": "1L",
+    "biomarkers": [],
+    "histology": "AML",
+    "treatment": "Azacitidine + Venetoclax",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "AML-004-B",
+    "cancer": "Acute Myeloid Leukemia",
+    "stage": "Newly Diagnosed (Comorbidities Precluding Intensive Induction Chemotherapy)",
+    "line": "1L",
+    "biomarkers": [],
+    "histology": "AML",
+    "treatment": "Azacitidine + Venetoclax",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "NET-001A",
+    "cancer": "Gastroenteropancreatic Neuroendocrine Tumor",
+    "stage": "Unresectable, locally advanced or metastatic",
+    "line": "1L",
+    "biomarkers": [],
+    "histology": "Well- or moderately-differentiated NET",
+    "treatment": "Lanreotide 120 mg subcutaneously every 4 weeks",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "MDS-003B-A",
+    "cancer": "Myelodysplastic Syndromes",
+    "stage": "IPSS Intermediate-2",
+    "line": "1L",
+    "biomarkers": [],
+    "histology": "MDS",
+    "treatment": "Decitabine 3-day regimen",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "ALL-001C",
+    "cancer": "Acute Lymphoblastic Leukemia",
+    "stage": "Newly Diagnosed",
+    "line": "Consolidation",
+    "biomarkers": [
+      "CD19_POSITIVE",
+      "PHILADELPHIA_CHROMOSOME_NEGATIVE"
+    ],
+    "histology": "B-cell precursor ALL",
+    "treatment": "Blinatumomab as part of multiphase chemotherapy consolidation",
+    "evidence": ""
+  },
+  {
+    "id": "NSCLC-006B",
+    "cancer": "Non-Small Cell Lung Cancer",
+    "stage": "IV",
+    "line": "1L",
+    "biomarkers": [
+      "MET_EX14_SKIP"
+    ],
+    "histology": null,
+    "treatment": "Tepotinib 450 mg orally once daily with food until disease progression or unacceptable toxicity",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "NSCLC-004B",
+    "cancer": "Non-Small Cell Lung Cancer",
+    "stage": "LOCALLY_ADVANCED",
+    "line": "Any",
+    "biomarkers": [
+      "ROS1_FUSION"
+    ],
+    "histology": null,
+    "treatment": "Repotrectinib 160 mg orally once daily for 14 days, then 160 mg orally twice daily; continue until disease progression or unacceptable toxicity",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "BR-002B",
+    "cancer": "Breast Cancer",
+    "stage": "UNRESECTABLE",
+    "line": "1L",
+    "biomarkers": [
+      "HER2_POSITIVE_IHC3_OR_ISH_POSITIVE_BY_FDA_APPROVED_TEST"
+    ],
+    "histology": null,
+    "treatment": "Fam-trastuzumab deruxtecan-nxki (T-DXd) 5.4 mg/kg IV every 3 weeks + pertuzumab 840 mg IV loading dose on Cycle 1 Day 1, then 420 mg IV every 3 weeks",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "CRC-BEV-A",
+    "cancer": "Colorectal Cancer",
+    "stage": "Metastatic unresectable",
+    "line": "1L",
+    "biomarkers": [],
+    "histology": "Adenocarcinoma",
+    "treatment": "mFOLFOX6 + Bevacizumab",
+    "evidence": ""
+  },
+  {
+    "id": "RCC-006B",
+    "cancer": "Renal Cell Carcinoma",
+    "stage": "IV",
+    "line": "1L",
+    "biomarkers": [],
+    "histology": "Clear Cell",
+    "treatment": "Lenvatinib + Pembrolizumab",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "CLL-006",
+    "cancer": "Chronic Lymphocytic Leukemia",
+    "stage": "IWCLL_INDICATION_FOR_TREATMENT",
+    "line": "1L",
+    "biomarkers": [],
+    "histology": null,
+    "treatment": "Acalabrutinib monotherapy",
+    "evidence": ""
+  },
+  {
+    "id": "AML-006",
+    "cancer": "AML",
+    "stage": "RELAPSED",
+    "line": "R/R",
+    "biomarkers": [
+      "IDH2 mutation detected by FDA-approved test"
+    ],
+    "histology": "Acute myeloid leukemia",
+    "treatment": "Enasidenib 100 mg orally once daily until disease progression or unacceptable toxicity",
+    "evidence": ""
+  },
+  {
+    "id": "AML-007-A",
+    "cancer": "AML",
+    "stage": "newly diagnosed",
+    "line": "1L",
+    "biomarkers": [],
+    "histology": "Therapy-related AML",
+    "treatment": "CPX-351/VYXEOS (daunorubicin 44 mg/m2 plus cytarabine 100 mg/m2 liposome IV over 90 minutes on induction days 1, 3, and 5; subsequent induction cycles, if needed, days 1 and 3; consolidation daunorubicin 29 mg/m2 plus cytarabine 65 mg/m2 liposome IV over 90 minutes on days 1 and 3)",
+    "evidence": ""
+  },
+  {
+    "id": "AML-007-B",
+    "cancer": "AML",
+    "stage": "newly diagnosed",
+    "line": "1L",
+    "biomarkers": [],
+    "histology": "AML with myelodysplasia-related changes",
+    "treatment": "CPX-351/VYXEOS (daunorubicin 44 mg/m2 plus cytarabine 100 mg/m2 liposome IV over 90 minutes on induction days 1, 3, and 5; subsequent induction cycles, if needed, days 1 and 3; consolidation daunorubicin 29 mg/m2 plus cytarabine 65 mg/m2 liposome IV over 90 minutes on days 1 and 3)",
+    "evidence": ""
+  },
+  {
+    "id": "CSCC-001",
+    "cancer": "Cutaneous Squamous Cell Carcinoma",
+    "stage": "metastatic_not_candidate_for_curative_surgery_or_curative_radiation",
+    "line": "Any line",
+    "biomarkers": [],
+    "histology": null,
+    "treatment": "Cemiplimab-rwlc 350 mg IV every 3 weeks until disease progression, unacceptable toxicity, or up to 24 months",
+    "evidence": ""
+  },
+  {
+    "id": "TGCT-002",
+    "cancer": "Tenosynovial Giant Cell Tumor",
+    "stage": "symptomatic_tgct_surgical_resection_potentially_causes_worsening_functional_limitation_or_severe_morbidity",
+    "line": "Any",
+    "biomarkers": [],
+    "histology": null,
+    "treatment": "Vimseltinib (Romvimza) 30 mg orally twice weekly, with a minimum of 72 hours between doses",
+    "evidence": ""
+  },
+  {
+    "id": "PECOMA-001-A",
+    "cancer": "PEComa",
+    "stage": "locally advanced unresectable",
+    "line": "Any",
+    "biomarkers": [],
+    "histology": "Malignant perivascular epithelioid cell tumor",
+    "treatment": "Sirolimus protein-bound particles for injectable suspension (albumin-bound; nab-sirolimus; Fyarro), 100 mg/m2 IV over 30 minutes on days 1 and 8 of each 21-day cycle until disease progression or unacceptable toxicity",
+    "evidence": ""
+  },
+  {
+    "id": "PECOMA-001-B",
+    "cancer": "PEComa",
+    "stage": "metastatic",
+    "line": "Any",
+    "biomarkers": [],
+    "histology": "Malignant perivascular epithelioid cell tumor",
+    "treatment": "Sirolimus protein-bound particles for injectable suspension (albumin-bound; nab-sirolimus; Fyarro), 100 mg/m2 IV over 30 minutes on days 1 and 8 of each 21-day cycle until disease progression or unacceptable toxicity",
+    "evidence": ""
+  },
+  {
+    "id": "AML-008",
+    "cancer": "Acute Myeloid Leukemia",
+    "stage": "Relapsed/refractory",
+    "line": "R/R",
+    "biomarkers": [
+      "Susceptible IDH1 mutation detected by an FDA-approved test"
+    ],
+    "histology": null,
+    "treatment": "Olutasidenib 150 mg orally twice daily until disease progression or unacceptable toxicity",
+    "evidence": ""
+  },
+  {
+    "id": "BTC-006",
+    "cancer": "Biliary Tract Cancer",
+    "stage": "locally_advanced",
+    "line": "1L",
+    "biomarkers": [],
+    "histology": null,
+    "treatment": "Durvalumab + gemcitabine + cisplatin, followed by durvalumab maintenance",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "PLUS-A-GAP-008",
+    "cancer": "Ovarian Cancer",
+    "stage": "Newly diagnosed advanced stage III-IV",
+    "line": "1L induction",
+    "biomarkers": [],
+    "histology": "High-grade serous epithelial ovarian/fallopian-tube/primary-peritoneal carcinoma",
+    "treatment": "Carboplatin + Paclitaxel",
+    "evidence": ""
+  },
+  {
+    "id": "PLUS-A-GAP-012",
+    "cancer": "Prostate Cancer",
+    "stage": "Metastatic high-risk hormone-sensitive",
+    "line": "1L",
+    "biomarkers": [],
+    "histology": "Adenocarcinoma",
+    "treatment": "Leuprolide (concurrent ADT) + Abiraterone acetate 1000 mg PO once daily + Prednisone 5 mg PO once daily",
+    "evidence": ""
+  },
+  {
+    "id": "PROP2-20260723-0163-A",
+    "cancer": "Follicular Lymphoma",
+    "stage": "STAGE_II_BULKY",
+    "line": "1L",
+    "biomarkers": [],
+    "histology": "FL grade 1-3A",
+    "treatment": "Obinutuzumab + bendamustine induction",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "PROP5-20260723-0107",
+    "cancer": "Anal Cancer",
+    "stage": "Stage I",
+    "line": "1L_curative",
+    "biomarkers": [],
+    "histology": "Squamous cell carcinoma",
+    "treatment": "Mitomycin-C + 5-FU with concurrent RT (systemic component)",
+    "evidence": ""
+  },
+  {
+    "id": "PROP5-20260723-0363",
+    "cancer": "Urothelial Carcinoma",
+    "stage": "LOCALLY_ADVANCED_UNRESECTABLE",
+    "line": "1L",
+    "biomarkers": [],
+    "histology": "Urothelial",
+    "treatment": "Enfortumab vedotin + Pembrolizumab",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "PROP7-20260725-0016",
+    "cancer": "Gastric Cancer",
+    "stage": "Metastatic",
+    "line": "1L",
+    "biomarkers": [
+      "PD-L1_CPS_GE_1"
+    ],
+    "histology": "Adenocarcinoma",
+    "treatment": "Nivolumab + fluoropyrimidine + oxaliplatin",
+    "evidence": "FDA-label"
+  },
+  {
+    "id": "D1-GROK500C-cea897a-0045-0084",
+    "cancer": "Bladder cancer",
+    "stage": "BCG-unresponsive NMIBC with CIS without papillary tumors",
+    "line": "BCG-unresponsive",
+    "biomarkers": [],
+    "histology": "Urothelial carcinoma",
+    "treatment": "Nogapendekin alfa inbakicept-pmln 400 mcg intravesically with BCG: induction once weekly for 6 weeks; maintenance once weekly for 3 weeks at months 4, 7, 10, 13, and 19; for ongoing complete response, optional additional maintenance at months 25, 31, and 37",
+    "evidence": ""
+  },
+  {
+    "id": "D1-GROK500C-fd0e71e-0081-0128",
+    "cancer": "Chronic Myeloid Leukemia",
+    "stage": "Chronic phase",
+    "line": "1L",
+    "biomarkers": [
+      "Philadelphia chromosome positive (Ph+)"
+    ],
+    "histology": "CML",
+    "treatment": "Nilotinib 300 mg orally twice daily",
+    "evidence": ""
+  },
+  {
+    "id": "D1-GROK-R1-0013-TOGA-GASTRIC-CAPE",
+    "cancer": "Gastric Cancer",
+    "stage": "Metastatic gastric adenocarcinoma",
+    "line": "1L",
+    "biomarkers": [
+      "HER2_OVEREXPRESSING by FDA-approved companion diagnostic"
+    ],
+    "histology": "Adenocarcinoma",
+    "treatment": "Trastuzumab + Cisplatin + Capecitabine",
+    "evidence": ""
+  }
+]

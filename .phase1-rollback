@@ -1,0 +1,8 @@
+git_head=7028d6de0abe32fc4fe4055293162851be6a5dff
+branch=main
+recorded=2026-08-14
+note=Restore with: git checkout 7028d6de0abe32fc4fe4055293162851be6a5dff -- .
+vercel_project=onetra
+live_url=https://onetra.vercel.app
+corpus=C:\OneTra\cc-sonnet5-live-wiring-2026-08-12\deploy_staging\corpus\doctor1_frozen\11_FINAL_D1_ACTIVE_CORPUS.json
+corpus_rule_count=315

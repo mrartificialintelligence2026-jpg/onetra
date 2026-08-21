@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OneTra Health — General View</title>
+
+<style>
+body{
+    margin:0;
+    background:#031126;
+    color:white;
+    font-family:Arial, sans-serif;
+}
+
+.topbar{
+    height:70px;
+    border-bottom:1px solid #163252;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 30px;
+    background:#04162f;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#33b5ff;
+}
+
+.right{
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    padding:12px 20px;
+    border-radius:10px;
+    border:1px solid #1f466d;
+    background:#0b2342;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.hero{
+    padding:80px 80px 40px 80px;
+    max-width:1100px;
+}
+
+.hero h1{
+    font-size:58px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.hero p{
+    color:#9db4cb;
+    font-size:22px;
+    line-height:1.6;
+}
+
+.badges{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.badge{
+    background:#08213d;
+    border:1px solid #1b4368;
+    padding:12px 18px;
+    border-radius:30px;
+    color:#7fd7ff;
+}
+
+.section{
+    padding:40px 80px;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#061a33;
+    border:1px solid #17395b;
+    border-radius:18px;
+    padding:30px;
+}
+
+.card h3{
+    margin-top:0;
+    color:#5fcfff;
+}
+
+.card p{
+    color:#9db4cb;
+    line-height:1.6;
+}
+
+.cta{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+}
+
+.big-btn{
+    padding:18px 28px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.primary{
+    background:#1da1ff;
+    color:white;
+}
+
+.secondary{
+    background:#0b2342;
+    border:1px solid #24507a;
+    color:white;
+}
+
+.footer{
+    margin-top:80px;
+    padding:40px 80px;
+    border-top:1px solid #163252;
+    color:#6d88a3;
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <div class="logo">
+        One<span>Tra</span> Health
+    </div>
+
+    <div class="right">
+        <button class="btn">Login / Request Access</button>
+    </div>
+</div>
+
+<div class="hero">
+    <h1>
+        Oncology decisions shouldn’t depend on how recently you read a paper.
+    </h1>
+
+    <p>
+        OneTra Health is an evidence-backed oncology intelligence platform built to surface treatment pathways, biomarkers, FDA-approved therapies, and clinical recommendations through deterministic validation systems.
+    </p>
+
+    <div class="badges">
+        <div class="badge">FDA-Aligned</div>
+        <div class="badge">NCCN-Oriented</div>
+        <div class="badge">Biomarker Intelligence</div>
+        <div class="badge">Clinical Safety Layer</div>
+    </div>
+
+    <div class="cta">
+        <button class="big-btn primary">
+            See the Platform
+        </button>
+
+        <button class="big-btn secondary">
+            Request Demo
+        </button>
+    </div>
+</div>
+
+<div class="section">
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>Evidence Engine</h3>
+            <p>
+                Deterministic oncology workflows based on structured clinical doctrine, biomarkers, pathology, staging systems, and evidence-backed therapeutic pathways.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>General Access View</h3>
+            <p>
+                Explore cancer treatment pathways, therapies, procedures, and referral recommendations through a simplified oncology interface designed for non-specialist access.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Oncology Intelligence Layer</h3>
+            <p>
+                Enterprise oncology workflows for oncologists, tumor boards, and hospitals with deeper validation, biomarker sequencing, and treatment analysis.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer">
+    OneTra Health — Deterministic Oncology Decision Infrastructure
+</div>
+
+</body>
+</html>

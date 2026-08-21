@@ -1,15 +1,23 @@
 {
   "name": "onetra-website",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node tests/liveClient.test.js && node tests/claims.test.js && node tests/seo.test.js && node tests/taxonomy.test.js && node tests/auth.test.js && node tests/ledger.test.js && node tests/admin.test.js && node tests/security-bundle.test.js",
+    "test:browser": "node tests/e2e-live.browser.js",
+    "test:positives": "node tests/e2e-positive.browser.js",
+    "test:phase2": "node tests/e2e-phase2.browser.js",
+    "test:doctor1-vnext": "node tests/doctor1-vnext-golden.browser.js",
+    "test:doctor1-vnext-pilot": "node tests/doctor1-vnext-pilot.browser.js"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "jose": "^6.2.8",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-router-dom": "^7.15.1"
@@ -23,6 +31,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.5.0",
+    "playwright": "^1.61.1",
     "vite": "^8.0.10"
   }
 }

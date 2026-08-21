@@ -1,0 +1,1906 @@
+{
+  "matches": [
+    {
+      "id": "NSCLC-006B",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "IV",
+      "line": "1L",
+      "bios": [
+        "MET_EX14_SKIP"
+      ],
+      "tx": "Tepotinib 450 mg orally once daily with food until disease progression or unacceptable tox"
+    },
+    {
+      "id": "NSCLC-004B",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "LOCALLY_ADVANCED",
+      "line": "Any",
+      "bios": [
+        "ROS1_FUSION"
+      ],
+      "tx": "Repotrectinib 160 mg orally once daily for 14 days, then 160 mg orally twice daily; contin"
+    },
+    {
+      "id": "NSCLC-004B",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "METASTATIC",
+      "line": "Any",
+      "bios": [
+        "ROS1_FUSION"
+      ],
+      "tx": "Repotrectinib 160 mg orally once daily for 14 days, then 160 mg orally twice daily; contin"
+    },
+    {
+      "id": "CLL-006",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Chronic Lymphocytic Leukemia",
+      "stage": "IWCLL_INDICATION_FOR_TREATMENT",
+      "line": "1L",
+      "bios": [],
+      "tx": "Acalabrutinib monotherapy"
+    },
+    {
+      "id": "CSCC-001",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Cutaneous Squamous Cell Carcinoma",
+      "stage": "metastatic_not_candidate_for_curative_surgery_or_curative_radiation",
+      "line": "Any line",
+      "bios": [],
+      "tx": "Cemiplimab-rwlc 350 mg IV every 3 weeks until disease progression, unacceptable toxicity, "
+    },
+    {
+      "id": "CSCC-001",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Cutaneous Squamous Cell Carcinoma",
+      "stage": "locally_advanced_not_candidate_for_curative_surgery_or_curative_radiation",
+      "line": "Any line",
+      "bios": [],
+      "tx": "Cemiplimab-rwlc 350 mg IV every 3 weeks until disease progression, unacceptable toxicity, "
+    },
+    {
+      "id": "TGCT-002",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Tenosynovial Giant Cell Tumor",
+      "stage": "symptomatic_tgct_surgical_resection_potentially_causes_worsening_functional_limitation_or_severe_morbidity",
+      "line": "Any",
+      "bios": [],
+      "tx": "Vimseltinib (Romvimza) 30 mg orally twice weekly, with a minimum of 72 hours between doses"
+    },
+    {
+      "id": "BTC-006",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Biliary Tract Cancer",
+      "stage": "locally_advanced",
+      "line": "1L",
+      "bios": [],
+      "tx": "Durvalumab + gemcitabine + cisplatin, followed by durvalumab maintenance"
+    }
+  ],
+  "results": [
+    {
+      "id": "NSCLC-006B",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "IV",
+      "line": "1L",
+      "bios": [
+        "MET_EX14_SKIP"
+      ],
+      "tx": "Tepotinib 450 mg orally once daily with food until disease progression or unacceptable tox"
+    },
+    {
+      "id": "NSCLC-003C",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "METASTATIC",
+      "line": "1L",
+      "bios": [
+        "ALK_FUSION"
+      ],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-003C",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "IV",
+      "line": "1L",
+      "bios": [
+        "ALK_FUSION"
+      ],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-004B",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "LOCALLY_ADVANCED",
+      "line": "Any",
+      "bios": [
+        "ROS1_FUSION"
+      ],
+      "tx": "Repotrectinib 160 mg orally once daily for 14 days, then 160 mg orally twice daily; contin"
+    },
+    {
+      "id": "NSCLC-004B",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "METASTATIC",
+      "line": "Any",
+      "bios": [
+        "ROS1_FUSION"
+      ],
+      "tx": "Repotrectinib 160 mg orally once daily for 14 days, then 160 mg orally twice daily; contin"
+    },
+    {
+      "id": "NSCLC-004B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "Any",
+      "line": "Any",
+      "bios": [
+        "ROS1_FUSION"
+      ],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-021-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "IV",
+      "line": "2L+",
+      "bios": [
+        "EGFR_L858R"
+      ],
+      "tx": ""
+    },
+    {
+      "id": "HCC-001",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Hepatocellular Carcinoma",
+      "stage": "UNRESECTABLE",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HCC-001",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Hepatocellular Carcinoma",
+      "stage": "METASTATIC",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HCC-001",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Hepatocellular Carcinoma",
+      "stage": "Unresectable or Metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "GAS-004-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Gastric Cancer",
+      "stage": "ADVANCED",
+      "line": "2L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "GAS-004-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Gastric Cancer",
+      "stage": "METASTATIC",
+      "line": "2L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "GAS-004-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Gastroesophageal Junction Cancer",
+      "stage": "ADVANCED",
+      "line": "2L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "GAS-004-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Gastroesophageal Junction Cancer",
+      "stage": "METASTATIC",
+      "line": "2L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BLA-003B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Urothelial Carcinoma",
+      "stage": "Locally advanced",
+      "line": "2L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BLA-003B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Urothelial Carcinoma",
+      "stage": "Metastatic",
+      "line": "2L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BLA-003B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Urothelial Carcinoma",
+      "stage": "IV",
+      "line": "2L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BLA-001",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Urothelial Carcinoma",
+      "stage": "Locally Advanced",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BLA-001",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Urothelial Carcinoma",
+      "stage": "Metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HCC-004",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Hepatocellular Carcinoma",
+      "stage": "Unresectable",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "END-001",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Endometrial Cancer",
+      "stage": "PRIMARY_ADVANCED",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "END-001",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Endometrial Cancer",
+      "stage": "RECURRENT",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "END-001",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Endometrial Cancer",
+      "stage": "Primary advanced or recurrent",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "CER-005",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Cervical Cancer",
+      "stage": "PERSISTENT",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "CER-005",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Cervical Cancer",
+      "stage": "RECURRENT",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "CER-005",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Cervical Cancer",
+      "stage": "METASTATIC",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "LYM-003B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Diffuse Large B-Cell Lymphoma",
+      "stage": "Relapsed/Refractory",
+      "line": "3L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-001A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "METASTATIC",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-001A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "UNRESECTABLE_RECURRENT",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-001A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "Recurrent/Metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-002B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "METASTATIC",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-002B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "UNRESECTABLE_RECURRENT",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-002B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "Recurrent/Metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "LYM-004A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Diffuse Large B-Cell Lymphoma, NOS",
+      "stage": "Relapsed/Refractory",
+      "line": "Later Line",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-002A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "Metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-002A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "Unresectable Recurrent",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-002A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "Recurrent/Metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-004B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "Recurrent/Metastatic",
+      "line": "2L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-004A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "Recurrent/Metastatic",
+      "line": "2L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "ESO-004",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Gastric / GEJ Cancer",
+      "stage": "ADVANCED",
+      "line": "2L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "ESO-004",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Gastric / GEJ Cancer",
+      "stage": "METASTATIC",
+      "line": "2L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "ESO-004",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Gastric / GEJ Cancer",
+      "stage": "IV",
+      "line": "2L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "STS-004",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Soft Tissue Sarcoma",
+      "stage": "UNRESECTABLE",
+      "line": "Any line",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "STS-004",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Soft Tissue Sarcoma",
+      "stage": "METASTATIC",
+      "line": "Any line",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "STS-004",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Soft Tissue Sarcoma",
+      "stage": "Unresectable or Metastatic",
+      "line": "Any line",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MESO-002",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Mesothelioma",
+      "stage": "Unresectable malignant pleural mesothelioma",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MESO-003A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Pleural Mesothelioma",
+      "stage": "Advanced/Unresectable",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MM-002",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Multiple Myeloma",
+      "stage": "TRANSPLANT_INELIGIBLE",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MM-002",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Multiple Myeloma",
+      "stage": "Newly Diagnosed",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MM-004A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Multiple Myeloma",
+      "stage": "Relapsed/Refractory",
+      "line": "5L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MM-003B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Multiple Myeloma",
+      "stage": "Relapsed/Refractory",
+      "line": "1L-3L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MM-004C",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Multiple Myeloma",
+      "stage": "Relapsed/Refractory",
+      "line": "5L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HL-003B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Hodgkin Lymphoma",
+      "stage": "Relapsed/Refractory",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HL-004A-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Hodgkin Lymphoma",
+      "stage": "Relapsed or progressed classical Hodgkin lymphoma after systemic therapy including autologous HSCT",
+      "line": "3L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HL-004B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Hodgkin Lymphoma",
+      "stage": "Relapsed after ASCT",
+      "line": "3L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "CLL-003B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Chronic Lymphocytic Leukemia",
+      "stage": "Relapsed/Refractory",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "CLL-003C",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Chronic Lymphocytic Leukemia",
+      "stage": "Relapsed/Refractory",
+      "line": "3L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "CLL-004B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Chronic Lymphocytic Leukemia",
+      "stage": "Relapsed/Refractory",
+      "line": "Later Line",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "AML-004-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Acute Myeloid Leukemia",
+      "stage": "Newly Diagnosed",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "AML-004-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Acute Myeloid Leukemia",
+      "stage": "Newly Diagnosed (Comorbidities Precluding Intensive Induction Chemotherapy)",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "NET-001A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Gastroenteropancreatic Neuroendocrine Tumor",
+      "stage": "Unresectable, locally advanced or metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MDS-003B-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Myelodysplastic Syndromes",
+      "stage": "IPSS Intermediate-2",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MDS-003B-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Myelodysplastic Syndromes",
+      "stage": "IPSS High-risk",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MDS-003B-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Myelodysplastic Syndromes",
+      "stage": "Higher-Risk",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "TA-002-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Tumor-Agnostic",
+      "stage": "Unresectable",
+      "line": "Any line after prior treatment",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "TA-002-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Tumor-Agnostic",
+      "stage": "Metastatic",
+      "line": "Any line after prior treatment",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "TA-002-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Tumor-Agnostic",
+      "stage": "Unresectable/Metastatic",
+      "line": "Any line after prior treatment",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-REVEL-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "IV",
+      "line": "2L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BR-BRCA-B-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Breast Cancer",
+      "stage": "IV",
+      "line": "2L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "CRC-BEV-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Colorectal Cancer",
+      "stage": "Metastatic unresectable",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MEL-IO-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Melanoma",
+      "stage": "UNRESECTABLE",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MEL-IO-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Melanoma",
+      "stage": "METASTATIC",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MEL-IO-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Melanoma",
+      "stage": "IV",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MEL-ADJ-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Melanoma",
+      "stage": "III",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MEL-ADJ-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Melanoma",
+      "stage": "Adjuvant",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MEL-ADJ-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Melanoma",
+      "stage": "III",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "RCC-LENV-EVE",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Renal Cell Carcinoma",
+      "stage": "Advanced",
+      "line": "2L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "RCC-006A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Renal Cell Carcinoma",
+      "stage": "METASTATIC_FAVORABLE_RISK",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "RCC-006A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Renal Cell Carcinoma",
+      "stage": "Metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "RCC-006B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Renal Cell Carcinoma",
+      "stage": "IV",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "RCC-BELZU",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Renal Cell Carcinoma",
+      "stage": "Unresectable Locally Advanced",
+      "line": "Later-line",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "RCC-BELZU",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Renal Cell Carcinoma",
+      "stage": "Metastatic",
+      "line": "Later-line",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "RCC-BELZU",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Renal Cell Carcinoma",
+      "stage": "Advanced",
+      "line": "Later-line",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HCC-LENV",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Hepatocellular Carcinoma",
+      "stage": "UNRESECTABLE",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HCC-LENV",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Hepatocellular Carcinoma",
+      "stage": "Unresectable",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-048B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "METASTATIC",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-048B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "UNRESECTABLE_RECURRENT",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "PAN-GEM-MONO",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Pancreatic Cancer",
+      "stage": "Metastatic Stage IV",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "PAN-GEM-MONO",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Pancreatic Cancer",
+      "stage": "IV",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-021-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "Locally advanced or metastatic",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "PR-008-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Prostate Cancer",
+      "stage": "METASTATIC_CASTRATION_RESISTANT_PROSTATE_CANCER",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "PR-008-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Prostate Cancer",
+      "stage": "mCRPC",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MEL-004",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Melanoma",
+      "stage": "UNRESECTABLE",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MEL-004",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Melanoma",
+      "stage": "METASTATIC",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "CLL-006",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Chronic Lymphocytic Leukemia",
+      "stage": "IWCLL_INDICATION_FOR_TREATMENT",
+      "line": "1L",
+      "bios": [],
+      "tx": "Acalabrutinib monotherapy"
+    },
+    {
+      "id": "CLL-006",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Chronic Lymphocytic Leukemia",
+      "stage": "Any",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MM-005",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Multiple Myeloma",
+      "stage": "Relapsed/refractory",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "AML-007-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "AML",
+      "stage": "newly diagnosed",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "AML-007-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "AML",
+      "stage": "Newly diagnosed",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "AML-007-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "AML",
+      "stage": "newly diagnosed",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "AML-007-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "AML",
+      "stage": "Newly diagnosed",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "RCC-008",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Renal Cell Carcinoma",
+      "stage": "POST_NEPHRECTOMY_INTERMEDIATE_HIGH_RECURRENCE_RISK",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "RCC-008",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Renal Cell Carcinoma",
+      "stage": "POST_NEPHRECTOMY_HIGH_RECURRENCE_RISK",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "RCC-008",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Renal Cell Carcinoma",
+      "stage": "POST_NEPHRECTOMY_AND_METASTASECTOMY_M1_NO_EVIDENCE_OF_DISEASE",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-026",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "NSCLC",
+      "stage": "Stage IB (T2a ≥4 cm)",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-026",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "NSCLC",
+      "stage": "Stage II",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-026",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "NSCLC",
+      "stage": "Stage IIIA",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BLA-006-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Urothelial Carcinoma",
+      "stage": "ypT2",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BLA-006-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Urothelial Carcinoma",
+      "stage": "ypT3",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BLA-006-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Urothelial Carcinoma",
+      "stage": "ypT4a",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BLA-006-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Urothelial Carcinoma",
+      "stage": "pT3",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BLA-006-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Urothelial Carcinoma",
+      "stage": "pT4a",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BLA-006-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Urothelial Carcinoma",
+      "stage": "pN+",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BLA-007",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Urothelial Carcinoma",
+      "stage": "Locally Advanced",
+      "line": "Maintenance",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BLA-007",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Urothelial Carcinoma",
+      "stage": "Metastatic",
+      "line": "Maintenance",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BLA-007",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Urothelial Carcinoma",
+      "stage": "Maintenance after first-line platinum-containing chemotherapy",
+      "line": "Maintenance",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "CML-002-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Chronic Myeloid Leukemia",
+      "stage": "chronic phase",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "CML-002-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Chronic Myeloid Leukemia",
+      "stage": "accelerated phase",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "CML-002-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Chronic Myeloid Leukemia",
+      "stage": "Chronic phase or accelerated phase CML",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "OV-006A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Ovarian Cancer",
+      "stage": "recurrent",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "OV-006A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Ovarian Cancer",
+      "stage": "Recurrent",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "OV-006C-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Ovarian Cancer",
+      "stage": "recurrent",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "OV-006C-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Ovarian Cancer",
+      "stage": "Recurrent platinum-resistant",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "FL-002",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Follicular Lymphoma",
+      "stage": "Relapsed/refractory",
+      "line": "3L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MCC-001",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Merkel Cell Carcinoma",
+      "stage": "metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MCC-001",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Merkel Cell Carcinoma",
+      "stage": "Metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MCC-002",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Merkel Cell Carcinoma",
+      "stage": "recurrent locally advanced",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MCC-002",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Merkel Cell Carcinoma",
+      "stage": "metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "MCC-002",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Merkel Cell Carcinoma",
+      "stage": "Recurrent locally advanced or metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "CSCC-001",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Cutaneous Squamous Cell Carcinoma",
+      "stage": "metastatic_not_candidate_for_curative_surgery_or_curative_radiation",
+      "line": "Any line",
+      "bios": [],
+      "tx": "Cemiplimab-rwlc 350 mg IV every 3 weeks until disease progression, unacceptable toxicity, "
+    },
+    {
+      "id": "CSCC-001",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Cutaneous Squamous Cell Carcinoma",
+      "stage": "locally_advanced_not_candidate_for_curative_surgery_or_curative_radiation",
+      "line": "Any line",
+      "bios": [],
+      "tx": "Cemiplimab-rwlc 350 mg IV every 3 weeks until disease progression, unacceptable toxicity, "
+    },
+    {
+      "id": "CSCC-001",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Cutaneous Squamous Cell Carcinoma",
+      "stage": "Metastatic or locally advanced CSCC not amenable to curative surgery or curative radiation",
+      "line": "Any line",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "GBM-003",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Glioblastoma",
+      "stage": "recurrent",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "GBM-003",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Glioblastoma",
+      "stage": "Recurrent",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "TGCT-002",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Tenosynovial Giant Cell Tumor",
+      "stage": "symptomatic_tgct_surgical_resection_potentially_causes_worsening_functional_limitation_or_severe_morbidity",
+      "line": "Any",
+      "bios": [],
+      "tx": "Vimseltinib (Romvimza) 30 mg orally twice weekly, with a minimum of 72 hours between doses"
+    },
+    {
+      "id": "TGCT-002",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Tenosynovial Giant Cell Tumor",
+      "stage": "Symptomatic TGCT with surgical resection potentially causing worsening functional limitation or severe morbidity",
+      "line": "Any",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "DESMOID-001",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Desmoid Tumor",
+      "stage": "progressing",
+      "line": "Any",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "DESMOID-001",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Desmoid Tumor",
+      "stage": "Requires systemic treatment",
+      "line": "Any",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "PECOMA-001-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "PEComa",
+      "stage": "locally advanced unresectable",
+      "line": "Any",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "PECOMA-001-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "PEComa",
+      "stage": "Locally advanced unresectable",
+      "line": "Any",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "PECOMA-001-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "PEComa",
+      "stage": "metastatic",
+      "line": "Any",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "PECOMA-001-B",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "PEComa",
+      "stage": "Metastatic",
+      "line": "Any",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "PTCL-002",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Peripheral T-Cell Lymphoma",
+      "stage": "Relapsed/refractory",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "DLBCL-004",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Diffuse Large B-Cell Lymphoma",
+      "stage": "Relapsed/refractory",
+      "line": "3L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "FL-003",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Follicular Lymphoma",
+      "stage": "Relapsed/refractory",
+      "line": "3L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "PTCL-004",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Peripheral T-cell lymphoma",
+      "stage": "Relapsed/refractory",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "PV-002",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Polycythemia Vera",
+      "stage": "High-risk polycythemia vera requiring first-line cytoreduction",
+      "line": "First-line cytoreduction",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "SCLC-006",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Small Cell Lung Cancer",
+      "stage": "Extensive-stage",
+      "line": "2L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "CLL-010",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Chronic Lymphocytic Leukemia",
+      "stage": "Previously untreated CLL/SLL",
+      "line": "1L fixed-duration",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "AML-011",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Acute Myeloid Leukemia",
+      "stage": "Newly diagnosed AML",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "KAPOSI-001",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "AIDS-related Kaposi Sarcoma",
+      "stage": "Systemic treatment",
+      "line": "Later-line",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "RCC-010",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Renal Cell Carcinoma",
+      "stage": "Advanced",
+      "line": "3L+",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BTC-006",
+      "status": "OK",
+      "http": 200,
+      "cancer": "Biliary Tract Cancer",
+      "stage": "locally_advanced",
+      "line": "1L",
+      "bios": [],
+      "tx": "Durvalumab + gemcitabine + cisplatin, followed by durvalumab maintenance"
+    },
+    {
+      "id": "BTC-006",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Biliary Tract Cancer",
+      "stage": "metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BTC-006",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Biliary Tract Cancer",
+      "stage": "Locally advanced or metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BTC-007",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Biliary Tract Cancer",
+      "stage": "locally advanced unresectable",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BTC-007",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Biliary Tract Cancer",
+      "stage": "metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BTC-007",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Biliary Tract Cancer",
+      "stage": "Locally advanced unresectable or metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-031",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "Unresectable Stage III",
+      "line": "Consolidation",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-031",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "Unresectable stage III, post concurrent chemoradiation, no progression",
+      "line": "Consolidation",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BR-018A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Breast Cancer",
+      "stage": "T1cN1-3M0",
+      "line": "Neoadjuvant/Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BR-018A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Breast Cancer",
+      "stage": "T2-T4N0-3M0",
+      "line": "Neoadjuvant/Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "BR-018A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Breast Cancer",
+      "stage": "High-risk early-stage triple-negative breast cancer; neoadjuvant chemotherapy followed by surgery and adjuvant pembrolizumab",
+      "line": "Neoadjuvant/Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-032A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "resectable_tumor_ge_4_cm",
+      "line": "Neoadjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-032A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "resectable_node_positive",
+      "line": "Neoadjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-032A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "Resectable NSCLC with tumor ≥4 cm or node-positive disease",
+      "line": "Neoadjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-033",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "resectable_tumor_size_ge_4_cm",
+      "line": "Perioperative",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-033",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "resectable_node_positive",
+      "line": "Perioperative",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "NSCLC-033",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Non-Small Cell Lung Cancer",
+      "stage": "Resectable early-stage NSCLC perioperative",
+      "line": "Perioperative",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-007",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "locoregionally advanced non-metastatic",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-007",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "Locoregionally advanced, non-metastatic, definitive curative treatment",
+      "line": "1L",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "PAN-007",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Pancreatic adenocarcinoma",
+      "stage": "resected",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "PAN-007",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Pancreatic adenocarcinoma",
+      "stage": "Resected/adjuvant",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "ESO-007-A",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Esophageal / GEJ Cancer",
+      "stage": "Neoadjuvant",
+      "line": "Neoadjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "CRC-016",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Colon Cancer",
+      "stage": "stage III",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "CRC-016",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Colon Cancer",
+      "stage": "Resected/adjuvant",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "OV-008",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Ovarian Cancer",
+      "stage": "STAGE_II",
+      "line": "FIRST_LINE",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "OV-008",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Ovarian Cancer",
+      "stage": "STAGE_III",
+      "line": "FIRST_LINE",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "OV-008",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Ovarian Cancer",
+      "stage": "STAGE_IV",
+      "line": "FIRST_LINE",
+      "bios": [],
+      "tx": ""
+    },
+    {
+      "id": "HNSCC-009",
+      "status": "ABSTAIN",
+      "http": 200,
+      "cancer": "Head and Neck Squamous Cell Carcinoma",
+      "stage": "Resected nonmetastatic head and neck squamous cell carcinoma",
+      "line": "Adjuvant",
+      "bios": [],
+      "tx": ""
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://onetra.vercel.app/sitemap.xml
+# AI crawlers: see /llms.txt for a truthful site summary.
+

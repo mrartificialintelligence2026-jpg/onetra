@@ -1,0 +1,17 @@
+{
+  "name": "OneTra Health",
+  "short_name": "OneTra",
+  "description": "Validation-stage adult oncology decision support.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#F6F3EC",
+  "theme_color": "#0B1F3A",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

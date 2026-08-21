@@ -1,0 +1,40 @@
+# OneTra Health
+
+> Validation-stage adult oncology decision support. Deterministic rule matching, source-traceable evidence, clinical-document processing, and safe abstention.
+
+- Home: https://onetra.vercel.app/
+- Validator: https://onetra.vercel.app/dashboard
+- Login (public demonstration access; no Google authentication in this phase): https://onetra.vercel.app/login
+- Security/Privacy: https://onetra.vercel.app/privacy
+- Terms: https://onetra.vercel.app/terms
+- Contact: mailto:hello@onetra.health
+
+## What OneTra does
+
+OneTra evaluates a structured adult oncology case against a clinically audited rule corpus.
+
+Doctor 1 returns a single deterministic recommendation or abstains when criteria are not met.
+Doctor 2 surfaces source and evidence labels attached to a Doctor 1 match.
+Doctor 3 performs bounded, grounded analysis of an uploaded de-identified clinical document, or returns SILENCE.
+VEDA is the clinical-document processing path.
+
+Numeric patient age is required. Adult oncology only (18+).
+Use synthetic or de-identified cases only. Do not submit patient-identifying information.
+Clinician judgment is required. OneTra is not an approved medical device.
+
+## What OneTra does not do
+
+It does not ingest electronic health records, rank multiple treatment lines, match clinical trials, learn from outcomes, or replace a treating oncologist.
+Doctor 3 does not compare serial cases over time.
+
+## Live intake coverage
+
+The public validator exposes every cancer type present on at least one of the current 315 frozen Doctor 1 rules. Downstream stage, line, and biomarker lists are constrained to combinations that appear on those rules.
+
+The live matcher may still abstain when a rule needs fields the public intake cannot send. That abstention is expected and is not a fabricated recommendation.
+
+A proven positive live demonstration case is non-small cell lung cancer, stage IV, first line, MET exon 14 skipping, adult numeric age.
+
+## Sitemap
+
+https://onetra.vercel.app/sitemap.xml

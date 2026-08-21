@@ -1,1 +1,21 @@
-{"rewrites":[{"source":"/(.*)","destination":"/index.html"}]}
+{
+  "rewrites": [
+    {
+      "source": "/api/clinical-recommendation",
+      "destination": "https://onetra-veda-live.azurewebsites.net/api/clinical-recommendation"
+    },
+    {
+      "source": "/api/doctor1-vnext/:path*",
+      "destination": "https://onetra-veda-staging.azurewebsites.net/api/doctor1-vnext/:path*"
+    },
+    {
+      "source": "/doctor3/:path*",
+      "destination": "https://onetra-veda-live.azurewebsites.net/doctor3/:path*"
+    },
+    {
+      "source": "/((?!api/|doctor3/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+

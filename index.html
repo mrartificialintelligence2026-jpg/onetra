@@ -2,9 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>onetra-website</title>
+    <title>OneTra Health — Auditable oncology decision support</title>
+    <meta
+      name="description"
+      content="OneTra is validation-stage adult oncology decision support. Deterministic Doctor 1 matching, source-traceable evidence, VEDA document processing, and safe abstention. External oncologist review is underway."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#0B1F3A" />
+    <link rel="canonical" href="https://onetra.vercel.app/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&display=swap"
+      rel="stylesheet"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="OneTra Health" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="OneTra Health — Auditable oncology decision support" />
+    <meta
+      property="og:description"
+      content="Deterministic oncology matching, source-traceable evidence, and safe abstention. Validation-stage. Adult oncology only."
+    />
+    <meta property="og:url" content="https://onetra.vercel.app/" />
+    <meta property="og:image" content="https://onetra.vercel.app/favicon.svg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="OneTra Health — Auditable oncology decision support" />
+    <meta
+      name="twitter:description"
+      content="Validation-stage adult oncology decision support. Deterministic match or abstention. Clinician judgment required."
+    />
+    <meta name="twitter:image" content="https://onetra.vercel.app/favicon.svg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://onetra.vercel.app/#organization",
+            "name": "OneTra Health",
+            "url": "https://onetra.vercel.app/",
+            "email": "hello@onetra.health",
+            "logo": "https://onetra.vercel.app/favicon.svg"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://onetra.vercel.app/#website",
+            "name": "OneTra Health",
+            "url": "https://onetra.vercel.app/",
+            "publisher": { "@id": "https://onetra.vercel.app/#organization" },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://onetra.vercel.app/#app",
+            "name": "OneTra Health",
+            "applicationCategory": "HealthApplication",
+            "operatingSystem": "Web",
+            "url": "https://onetra.vercel.app/",
+            "description": "Validation-stage adult oncology decision support that deterministically matches a structured case to a clinically audited rule corpus, returns source-traceable evidence, processes de-identified clinical documents, and abstains when criteria are not met.",
+            "isAccessibleForFree": true,
+            "featureList": [
+              "Deterministic Doctor 1 matching or safe abstention",
+              "Doctor 2 source evidence labels",
+              "VEDA clinical-document processing",
+              "Doctor 3 grounded document analysis or SILENCE"
+            ],
+            "audience": { "@type": "Audience", "audienceType": "Oncologists" },
+            "creator": { "@id": "https://onetra.vercel.app/#organization" }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

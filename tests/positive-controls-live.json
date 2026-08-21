@@ -1,0 +1,538 @@
+{
+  "ok": [
+    {
+      "id": "HCC-001",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Atezolizumab 1200 mg IV followed by bevacizumab 15 mg/kg IV on the same day ever",
+      "expected": "Atezolizumab 1200 mg IV followed by beva"
+    },
+    {
+      "id": "BLA-001",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Enfortumab vedotin-ejfv 1.25 mg/kg IV on Days 1 and 8 plus pembrolizumab 200 mg ",
+      "expected": "Enfortumab vedotin-ejfv 1.25 mg/kg IV on"
+    },
+    {
+      "id": "ESO-001A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Pembrolizumab + Trastuzumab + Capecitabine + Oxaliplatin",
+      "expected": "Pembrolizumab + Trastuzumab + Capecitabi"
+    },
+    {
+      "id": "ESO-003B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Pembrolizumab + Platinum + Fluoropyrimidine",
+      "expected": "Pembrolizumab + Platinum + Fluoropyrimid"
+    },
+    {
+      "id": "ESO-002B-B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Nivolumab + CAPOX",
+      "expected": "Nivolumab + CAPOX"
+    },
+    {
+      "id": "STS-004",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Atezolizumab",
+      "expected": "Atezolizumab"
+    },
+    {
+      "id": "BTC-003B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Futibatinib 20 mg orally once daily until disease progression or unacceptable to",
+      "expected": "Futibatinib 20 mg orally once daily unti"
+    },
+    {
+      "id": "MM-003B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Carfilzomib + Dexamethasone",
+      "expected": "Carfilzomib + Dexamethasone"
+    },
+    {
+      "id": "AML-001",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Induction: 7-day cytarabine plus 3-day daunorubicin (7+3) with gemtuzumab ozogam",
+      "expected": "Induction: 7-day cytarabine plus 3-day d"
+    },
+    {
+      "id": "AML-004-A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Azacitidine + Venetoclax",
+      "expected": "Azacitidine + Venetoclax"
+    },
+    {
+      "id": "AML-004-B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Azacitidine + Venetoclax",
+      "expected": "Azacitidine + Venetoclax"
+    },
+    {
+      "id": "NET-001A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Lanreotide 120 mg subcutaneously every 4 weeks",
+      "expected": "Lanreotide 120 mg subcutaneously every 4"
+    },
+    {
+      "id": "MDS-003B-A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Decitabine 3-day regimen",
+      "expected": "Decitabine 3-day regimen"
+    },
+    {
+      "id": "ALL-001C",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Blinatumomab as part of multiphase chemotherapy consolidation",
+      "expected": "Blinatumomab as part of multiphase chemo"
+    },
+    {
+      "id": "NSCLC-006B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Tepotinib 450 mg orally once daily with food until disease progression or unacce",
+      "expected": "Tepotinib 450 mg orally once daily with "
+    },
+    {
+      "id": "NSCLC-004B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Repotrectinib 160 mg orally once daily for 14 days, then 160 mg orally twice dai",
+      "expected": "Repotrectinib 160 mg orally once daily f"
+    },
+    {
+      "id": "BR-002B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Fam-trastuzumab deruxtecan-nxki (T-DXd) 5.4 mg/kg IV every 3 weeks + pertuzumab ",
+      "expected": "Fam-trastuzumab deruxtecan-nxki (T-DXd) "
+    },
+    {
+      "id": "CRC-BEV-A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "mFOLFOX6 + Bevacizumab",
+      "expected": "mFOLFOX6 + Bevacizumab"
+    },
+    {
+      "id": "RCC-006B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Lenvatinib + Pembrolizumab",
+      "expected": "Lenvatinib + Pembrolizumab"
+    },
+    {
+      "id": "CLL-006",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Acalabrutinib monotherapy",
+      "expected": "Acalabrutinib monotherapy"
+    },
+    {
+      "id": "AML-006",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Enasidenib 100 mg orally once daily until disease progression or unacceptable to",
+      "expected": "Enasidenib 100 mg orally once daily unti"
+    },
+    {
+      "id": "AML-007-A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "CPX-351/VYXEOS (daunorubicin 44 mg/m2 plus cytarabine 100 mg/m2 liposome IV over",
+      "expected": "CPX-351/VYXEOS (daunorubicin 44 mg/m2 pl"
+    },
+    {
+      "id": "AML-007-B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "CPX-351/VYXEOS (daunorubicin 44 mg/m2 plus cytarabine 100 mg/m2 liposome IV over",
+      "expected": "CPX-351/VYXEOS (daunorubicin 44 mg/m2 pl"
+    },
+    {
+      "id": "CSCC-001",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Cemiplimab-rwlc 350 mg IV every 3 weeks until disease progression, unacceptable ",
+      "expected": "Cemiplimab-rwlc 350 mg IV every 3 weeks "
+    },
+    {
+      "id": "TGCT-002",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Vimseltinib (Romvimza) 30 mg orally twice weekly, with a minimum of 72 hours bet",
+      "expected": "Vimseltinib (Romvimza) 30 mg orally twic"
+    },
+    {
+      "id": "PECOMA-001-A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Sirolimus protein-bound particles for injectable suspension (albumin-bound; nab-",
+      "expected": "Sirolimus protein-bound particles for in"
+    },
+    {
+      "id": "PECOMA-001-B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Sirolimus protein-bound particles for injectable suspension (albumin-bound; nab-",
+      "expected": "Sirolimus protein-bound particles for in"
+    },
+    {
+      "id": "AML-008",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Olutasidenib 150 mg orally twice daily until disease progression or unacceptable",
+      "expected": "Olutasidenib 150 mg orally twice daily u"
+    },
+    {
+      "id": "BTC-006",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Durvalumab + gemcitabine + cisplatin, followed by durvalumab maintenance",
+      "expected": "Durvalumab + gemcitabine + cisplatin, fo"
+    },
+    {
+      "id": "PLUS-A-GAP-008",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Carboplatin + Paclitaxel",
+      "expected": "Carboplatin + Paclitaxel"
+    },
+    {
+      "id": "PLUS-A-GAP-012",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Leuprolide (concurrent ADT) + Abiraterone acetate 1000 mg PO once daily + Predni",
+      "expected": "Leuprolide (concurrent ADT) + Abirateron"
+    },
+    {
+      "id": "PROP2-20260723-0163-A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Obinutuzumab + bendamustine induction",
+      "expected": "Obinutuzumab + bendamustine induction"
+    },
+    {
+      "id": "PROP5-20260723-0107",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Mitomycin-C + 5-FU with concurrent RT (systemic component)",
+      "expected": "Mitomycin-C + 5-FU with concurrent RT (s"
+    },
+    {
+      "id": "PROP5-20260723-0363",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Enfortumab vedotin + Pembrolizumab",
+      "expected": "Enfortumab vedotin + Pembrolizumab"
+    },
+    {
+      "id": "PROP7-20260725-0016",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Nivolumab + fluoropyrimidine + oxaliplatin",
+      "expected": "Nivolumab + fluoropyrimidine + oxaliplat"
+    },
+    {
+      "id": "D1-GROK500C-cea897a-0045-0084",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Nogapendekin alfa inbakicept-pmln 400 mcg intravesically with BCG: induction onc",
+      "expected": "Nogapendekin alfa inbakicept-pmln 400 mc"
+    },
+    {
+      "id": "D1-GROK500C-fd0e71e-0081-0128",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Nilotinib 300 mg orally twice daily",
+      "expected": "Nilotinib 300 mg orally twice daily"
+    },
+    {
+      "id": "D1-GROK-R1-0013-TOGA-GASTRIC-CAPE",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Trastuzumab + Cisplatin + Capecitabine",
+      "expected": "Trastuzumab + Cisplatin + Capecitabine"
+    }
+  ],
+  "live": [
+    {
+      "id": "HCC-001",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Atezolizumab 1200 mg IV followed by bevacizumab 15 mg/kg IV on the same day ever",
+      "expected": "Atezolizumab 1200 mg IV followed by beva"
+    },
+    {
+      "id": "BLA-001",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Enfortumab vedotin-ejfv 1.25 mg/kg IV on Days 1 and 8 plus pembrolizumab 200 mg ",
+      "expected": "Enfortumab vedotin-ejfv 1.25 mg/kg IV on"
+    },
+    {
+      "id": "ESO-001A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Pembrolizumab + Trastuzumab + Capecitabine + Oxaliplatin",
+      "expected": "Pembrolizumab + Trastuzumab + Capecitabi"
+    },
+    {
+      "id": "ESO-003B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Pembrolizumab + Platinum + Fluoropyrimidine",
+      "expected": "Pembrolizumab + Platinum + Fluoropyrimid"
+    },
+    {
+      "id": "ESO-002B-B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Nivolumab + CAPOX",
+      "expected": "Nivolumab + CAPOX"
+    },
+    {
+      "id": "STS-004",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Atezolizumab",
+      "expected": "Atezolizumab"
+    },
+    {
+      "id": "BTC-003B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Futibatinib 20 mg orally once daily until disease progression or unacceptable to",
+      "expected": "Futibatinib 20 mg orally once daily unti"
+    },
+    {
+      "id": "MM-003B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Carfilzomib + Dexamethasone",
+      "expected": "Carfilzomib + Dexamethasone"
+    },
+    {
+      "id": "AML-001",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Induction: 7-day cytarabine plus 3-day daunorubicin (7+3) with gemtuzumab ozogam",
+      "expected": "Induction: 7-day cytarabine plus 3-day d"
+    },
+    {
+      "id": "AML-004-A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Azacitidine + Venetoclax",
+      "expected": "Azacitidine + Venetoclax"
+    },
+    {
+      "id": "AML-004-B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Azacitidine + Venetoclax",
+      "expected": "Azacitidine + Venetoclax"
+    },
+    {
+      "id": "NET-001A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Lanreotide 120 mg subcutaneously every 4 weeks",
+      "expected": "Lanreotide 120 mg subcutaneously every 4"
+    },
+    {
+      "id": "MDS-003B-A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Decitabine 3-day regimen",
+      "expected": "Decitabine 3-day regimen"
+    },
+    {
+      "id": "ALL-001C",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Blinatumomab as part of multiphase chemotherapy consolidation",
+      "expected": "Blinatumomab as part of multiphase chemo"
+    },
+    {
+      "id": "NSCLC-006B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Tepotinib 450 mg orally once daily with food until disease progression or unacce",
+      "expected": "Tepotinib 450 mg orally once daily with "
+    },
+    {
+      "id": "NSCLC-004B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Repotrectinib 160 mg orally once daily for 14 days, then 160 mg orally twice dai",
+      "expected": "Repotrectinib 160 mg orally once daily f"
+    },
+    {
+      "id": "BR-002B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Fam-trastuzumab deruxtecan-nxki (T-DXd) 5.4 mg/kg IV every 3 weeks + pertuzumab ",
+      "expected": "Fam-trastuzumab deruxtecan-nxki (T-DXd) "
+    },
+    {
+      "id": "CRC-BEV-A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "mFOLFOX6 + Bevacizumab",
+      "expected": "mFOLFOX6 + Bevacizumab"
+    },
+    {
+      "id": "RCC-006B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Lenvatinib + Pembrolizumab",
+      "expected": "Lenvatinib + Pembrolizumab"
+    },
+    {
+      "id": "CLL-006",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Acalabrutinib monotherapy",
+      "expected": "Acalabrutinib monotherapy"
+    },
+    {
+      "id": "AML-006",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Enasidenib 100 mg orally once daily until disease progression or unacceptable to",
+      "expected": "Enasidenib 100 mg orally once daily unti"
+    },
+    {
+      "id": "AML-007-A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "CPX-351/VYXEOS (daunorubicin 44 mg/m2 plus cytarabine 100 mg/m2 liposome IV over",
+      "expected": "CPX-351/VYXEOS (daunorubicin 44 mg/m2 pl"
+    },
+    {
+      "id": "AML-007-B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "CPX-351/VYXEOS (daunorubicin 44 mg/m2 plus cytarabine 100 mg/m2 liposome IV over",
+      "expected": "CPX-351/VYXEOS (daunorubicin 44 mg/m2 pl"
+    },
+    {
+      "id": "CSCC-001",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Cemiplimab-rwlc 350 mg IV every 3 weeks until disease progression, unacceptable ",
+      "expected": "Cemiplimab-rwlc 350 mg IV every 3 weeks "
+    },
+    {
+      "id": "TGCT-002",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Vimseltinib (Romvimza) 30 mg orally twice weekly, with a minimum of 72 hours bet",
+      "expected": "Vimseltinib (Romvimza) 30 mg orally twic"
+    },
+    {
+      "id": "PECOMA-001-A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Sirolimus protein-bound particles for injectable suspension (albumin-bound; nab-",
+      "expected": "Sirolimus protein-bound particles for in"
+    },
+    {
+      "id": "PECOMA-001-B",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Sirolimus protein-bound particles for injectable suspension (albumin-bound; nab-",
+      "expected": "Sirolimus protein-bound particles for in"
+    },
+    {
+      "id": "AML-008",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Olutasidenib 150 mg orally twice daily until disease progression or unacceptable",
+      "expected": "Olutasidenib 150 mg orally twice daily u"
+    },
+    {
+      "id": "BTC-006",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Durvalumab + gemcitabine + cisplatin, followed by durvalumab maintenance",
+      "expected": "Durvalumab + gemcitabine + cisplatin, fo"
+    },
+    {
+      "id": "PLUS-A-GAP-008",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Carboplatin + Paclitaxel",
+      "expected": "Carboplatin + Paclitaxel"
+    },
+    {
+      "id": "PLUS-A-GAP-012",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Leuprolide (concurrent ADT) + Abiraterone acetate 1000 mg PO once daily + Predni",
+      "expected": "Leuprolide (concurrent ADT) + Abirateron"
+    },
+    {
+      "id": "PROP2-20260723-0163-A",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Obinutuzumab + bendamustine induction",
+      "expected": "Obinutuzumab + bendamustine induction"
+    },
+    {
+      "id": "PROP5-20260723-0107",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Mitomycin-C + 5-FU with concurrent RT (systemic component)",
+      "expected": "Mitomycin-C + 5-FU with concurrent RT (s"
+    },
+    {
+      "id": "PROP5-20260723-0363",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Enfortumab vedotin + Pembrolizumab",
+      "expected": "Enfortumab vedotin + Pembrolizumab"
+    },
+    {
+      "id": "PROP7-20260725-0016",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Nivolumab + fluoropyrimidine + oxaliplatin",
+      "expected": "Nivolumab + fluoropyrimidine + oxaliplat"
+    },
+    {
+      "id": "D1-GROK500C-cea897a-0045-0084",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Nogapendekin alfa inbakicept-pmln 400 mcg intravesically with BCG: induction onc",
+      "expected": "Nogapendekin alfa inbakicept-pmln 400 mc"
+    },
+    {
+      "id": "D1-GROK500C-fd0e71e-0081-0128",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Nilotinib 300 mg orally twice daily",
+      "expected": "Nilotinib 300 mg orally twice daily"
+    },
+    {
+      "id": "D1-GROK-R1-0013-TOGA-GASTRIC-CAPE",
+      "http": 200,
+      "status": "OK",
+      "live_tx": "Trastuzumab + Cisplatin + Capecitabine",
+      "expected": "Trastuzumab + Cisplatin + Capecitabine"
+    }
+  ]
+}
